@@ -1,0 +1,141 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-background-color);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+
+  & .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--white-text-color);
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo-footer__accent {
+  color: var(--accent-color);
+}
+
+.address__place {
+  color: var(--white-text-color);
+  font-style: normal;
+  text-decoration: none;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__mail-tel {
+  color: var(--address-color);
+  font-style: normal;
+  text-decoration: none;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-icon {
+  margin-left: 70px;
+}
+
+.title {
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--background-icon);
+  background-color: var(--footer-icon-background-color);
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.form {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.input-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--footer-background-color);
+  color: var(--white-text-color);
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: var(--address-color);
+  }
+}
